@@ -1,50 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-(function () {
-  var repo = "/anshika";
-
-  // If opening normal path → convert to hash route
-  if (!location.hash) {
-    var newUrl = repo + "/#/";
-    window.location.replace(newUrl);
-  }
-})();
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App</title>
-    <meta name="description" content="Project">
-    <meta name="author" content="">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@">
-    <meta property="og:title" content="App">
-    <meta name="twitter:title" content="App">
-    <meta property="og:description" content="Project">
-    <meta name="twitter:description" content="Project">
-    
-    <script type="module" crossorigin src="/anshika/js/index-B4JNNmB6.js"></script>
-    <link rel="stylesheet" crossorigin href="/anshika/css/index-BO-ngu4e.css">
-
+    <base href="/anshika/">
+    <title>Anshika</title>
+    <link rel="stylesheet" href="css/index-BO-ngu4e.css">
     <style>
-      @font-face {
-        font-family: 'CameraPlainVariable';
-        src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
-        font-weight: 100 900;
-        font-style: normal;
-        font-display: swap;
-      }
+        @font-face {
+            font-family: 'CameraPlainVariable';
+            src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: swap;
+        }
     </style>
 </head>
-
 <body>
     <div id="root"></div>
-    
-    <script>
-      window.history.replaceState(null, "", "/anshika/");
-    </script>
-    <script defer src="/anshika/js/~flock.js" data-proxy-url="/~api/analytics"></script>
+    <script type="module" src="js/index-B4JNNmB6.js"></script>
+    <script defer src="js/~flock.js"></script>
 </body>
 </html>
