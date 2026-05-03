@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
+     <script>
+  // If opened as /index.html or any path, redirect to root "/"
   (function () {
-    var repo = "/anshika";
-
-    // If not already at root, force root
-    if (location.pathname !== repo + "/" && location.pathname !== repo) {
-      window.location.replace(repo + "/");
+    var path = window.location.pathname;
+    // for local: /index.html  → /
+    if (path.endsWith('/index.html')) {
+      window.location.replace(path.replace('/index.html', '/') + window.location.search + window.location.hash);
     }
   })();
 </script>
