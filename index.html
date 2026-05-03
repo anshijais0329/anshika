@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <script>
-  // If opened as /index.html or any path, redirect to root "/"
-  (function () {
-    var path = window.location.pathname;
-    // for local: /index.html  → /
-    if (path.endsWith('/index.html')) {
-      window.location.replace(path.replace('/index.html', '/') + window.location.search + window.location.hash);
-    }
-  })();
+(function () {
+  var repo = "/anshika";
+
+  // If opening normal path → convert to hash route
+  if (!location.hash) {
+    var newUrl = repo + "/#/";
+    window.location.replace(newUrl);
+  }
+})();
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +30,7 @@
   <meta name="twitter:title" content="App">
   <meta property="og:description" content="Project">
   <meta name="twitter:description" content="Project">
-  <script type="module" crossorigin src="js/index-B4JNNmB6.js"></script>
+  <script type="module" crossorigin src="./js/index-B4JNNmB6.js"></script>
   <link rel="stylesheet" crossorigin href="css/index-BO-ngu4e.css">
 
 <style>
