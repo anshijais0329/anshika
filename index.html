@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+  // If opened as /index.html or any path, redirect to root "/"
+  (function () {
+    var path = window.location.pathname;
+    // for local: /index.html  → /
+    if (path.endsWith('/index.html')) {
+      window.location.replace(path.replace('/index.html', '/') + window.location.search + window.location.hash);
+    }
+  })();
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TODO: Set the document title to the name of your application -->
